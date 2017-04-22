@@ -12,7 +12,7 @@
     	<link href="css/bootstrap.min.css" rel="stylesheet">
     	<!-- Custom styles for this template -->
 	    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,800,900" rel="stylesheet">
-	    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' type="text/css">
+	    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,900" rel="stylesheet">
 	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	    <link href="css/font-awesome.css" rel="stylesheet">
@@ -37,39 +37,72 @@
               	<li id="email">miguellagartoramos@gmail.com</li>
               	<li id="phone">+639 926 287 4821</li>
               	<li id="fb">/MiguelLagartoRamos</li>
-<!--
-              	<li>
-                	<a href="" id="social-facebook">
-                  		<i class="fa fa-facebook" aria-hidden="true"></i>
-                	</a>
-              	</li>
-
-              	<li>
-                	<a href="" id="social-twitter">
-                  		<i class="fa fa-twitter" aria-hidden="true"></i>
-                	</a>
-              	</li>
-
-             	<li>
-                	<a href="" id="social-linkedin">
-                  		<i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              	</li>
-
-              	<li>
-                	<a href="" id="social-steam">
-                  		<i class="fa fa-steam" aria-hidden="true"></i>
-                	</a>
-              	</li>
--->
             </ul>
 	  	</nav>
 	</div>
 
+	<div class="scrollup"><i class="material-icons">keyboard_backspace</i> TOP</div>
 	<div class="wrapper animsition">
-		<div class="web-project-layout">
+		<div class="web-project-header color-1">
 			<div class="container">
-				
+				<h5 class="title-sm">&ndash; PROJECT NAME</h5>
+				<span class="year pull-right">Y &ndash; 2017</span>
+				<h3 class="work">ASISI WEBSITE</h3>
+				<ul>
+					<li><i class="fa fa-html5" aria-hidden="true"></i></li>
+					<li><i class="fa fa-css3" aria-hidden="true"></i></li>
+					<li><i class="fa fa-desktop" aria-hidden="true"></i></li>
+				</ul>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nihil, deleniti ex officia officiis at alias obcaecati impedit, eos, iste quod fuga cum optio eveniet dolorum suscipit assumenda sit quasi!</p>
+			</div>
+		</div>
+		<div class="web-project-body">
+			<div class="container">
+				<h5 class="title-sm text-center">&ndash; LAYOUT &ndash; </h5>
+				<h3 class="work text-center">Homepage</h3>
+				<div class="web-pages">
+					<img src="media/image/asisi-layout.png" class="img-responsive center-block">
+				</div>
+
+				<h5 class="title-sm text-center">&ndash; HIGHLIGHTED PAGES &ndash;</h5>
+				<h3 class="work text-center">Web Pages</h3>
+				<div class="col-md-6">
+				<h4 class="font-color-1">CONTACT PAGE</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nemo incidunt atque quibusdam adipisci soluta natus magni, excepturi eligendi ea quae quasi perspiciatis saepe recusandae velit ut voluptate omnis ipsum.</p>
+					<img src="media/image/asisi-contact-page.jpg" class="img-responsive center-block">
+				</div>
+				<div class="col-md-6">
+				<h4 class="font-color-1">ABOUT PAGE</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nemo incidunt atque quibusdam adipisci soluta natus magni, excepturi eligendi ea quae quasi perspiciatis saepe recusandae velit ut voluptate omnis ipsum.</p>
+					<img src="media/image/asisi-contact-page.jpg" class="img-responsive center-block">
+				</div>
+			</div>
+		</div>
+		<div class="web-project-footer">
+			<div class="container">
+
+				<div class="col-md-6">
+					<h5 class="title-sm">&ndash; CONTACT</h5>
+					<div class="title">
+						<span>MIGUEL<strong>RAMOS</strong></span>
+					</div>
+					<h5 class="title-sm">MIGUELLAGARTORAMOS@GMAIL.COM</h5>
+				</div>
+
+				<div class="col-md-6">
+					<h5 class="title-sm">&ndash; NEXT PROJECT</h5>
+					<div class="box">
+						<div id="web-works">
+							<div class="web-project">
+								<a href="#" target="_blank" data-hover="San JoseNews" class="project-title animsition-link">
+									San JoseNews<i class="material-icons pull-right">trending_flat</i>
+								</a>
+								<h5 class="title-sm">HTML, CSS, BOOTSTRAP</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -82,62 +115,26 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/animsition.min.js"></script>
+    <script src="js/custom.js"></script>
 
 	<script>
-	$(document).ready(function(){
-		$(".icon").click(function () {
-		    $(".mobilenav").fadeToggle(500);
-		    $(".top-menu").toggleClass("top-animate");
-		    $(".mid-menu").toggleClass("mid-animate");
-		    $(".bottom-menu").toggleClass("bottom-animate");
-		    
-		}); /* menu */
-
-		$('.parallax').parallax();
-
-		$('#toggle').click(function() {
-		   $(this).toggleClass('active');
-		   $('#overlay').toggleClass('open');
-		});
-		/*
+	$(document).ready(function(){	
 		var position = 0;
-		var height_first_section = $('#first-section').height();
+		var height_first_section = $('.web-project-header').height();
 
         $(document).scroll(function() { 
             position = $(this).scrollTop();
             if(position > height_first_section) {
-                $(".button span").css('background', '#1d1d1d');
+                $(".button span").css('background', '#DDD');
             } else {
-                $(".button span").css('background', '#ffffff');
+                $(".button span").css('background', '#FFFFFF');
             }
         });
-		*/
-		$(".web-project").click(function() {
-		  window.location = $(this).find("a").attr("href"); 
-		});
 	});
 
-	$(document).ready(function() {
-	  $(".animsition").animsition({
-	    inClass: 'fade-in',
-	    outClass: 'fade-out',
-	    inDuration: 1500,
-	    outDuration: 800,
-	    linkElement: '.animsition-link',
-	    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-	    loading: true,
-	    loadingParentElement: 'body', //animsition wrapper element
-	    loadingClass: 'animsition-loading',
-	    loadingInner: '<img src="media/image/rolling.svg">', // e.g '<img src="loading.svg" />'
-	    timeout: false,
-	    timeoutCountdown: 5000,
-	    onLoadEvent: true,
-	    browser: [ 'animation-duration', '-webkit-animation-duration']
-	  });
-	});
 	</script>
 
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
 
 	</body>
 </html>
