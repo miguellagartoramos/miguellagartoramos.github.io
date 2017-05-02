@@ -400,7 +400,7 @@ body .wrapper #first-section p strong {
 }
 .title {
   font-size: 23px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .title span{ font-weight: 100; }
 .title span strong{ font-weight: 900; color: #3c948b; }
@@ -506,7 +506,7 @@ body .wrapper #first-section p strong {
   padding: 0;
   color: #fff;
 }
-.home-btn{ padding-bottom: 50px; }
+.home-btn{ }
 .home-btn a { text-decoration: none; }
 .home-btn a:hover,
 .home-btn a:focus
