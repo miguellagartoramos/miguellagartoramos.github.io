@@ -27,7 +27,11 @@ ul, ol{
 
 .font-color-1 { color: #ed3237; }
 .color-1 { background-color: #ed3237; }
-.color-2 { background-color: #566371 }
+.color-2 { background-color: #566371; }
+.color-3 { background-color: #ce0202; }
+.color-4 { background-color: #2e2538; }
+.color-5 { background-color: #1b1d1d; }
+.color-6 { background-color: #39383a; }
 
 /* MENU */
 
@@ -411,6 +415,13 @@ body .wrapper #first-section p strong {
   letter-spacing: 3px;
   color: #1d1d1d;
 }
+.title a.title-sm{
+  display: block;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 400;
+  color: #efefef;
+}
 
 .year{
   font-weight: 400;
@@ -589,6 +600,7 @@ body .wrapper #first-section p strong {
 
 .web-pages{
   margin-bottom: 50px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
 
 .scrollup {
