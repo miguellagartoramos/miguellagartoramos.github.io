@@ -1,0 +1,67 @@
+@media only screen and (max-width: 720px) {
+	.button {
+		top: 4%;
+		right: 5%;
+		height: 16px;
+		width: 25px;
+	}
+	.button span { height: 3px; }
+	.button span:nth-of-type(2) { top: 7px; }
+	.button span:nth-of-type(3) { top: 15px; }
+	.button.active .top {
+	  -webkit-transform: translateY(7px) translateX(0) rotate(45deg);
+	          transform: translateY(7px) translateX(0) rotate(45deg);
+	  background: #EEE;
+	}
+	.button.active .bottom {
+	  -webkit-transform: translateY(-8px) translateX(0) rotate(-225deg);
+	          transform: translateY(-8px) translateX(0) rotate(-225deg);
+	  background: #EEE;
+	}
+	.wrapper #first-section { height: 700px }
+	.wrapper #first-section{ padding: 0 20px; transition: all 0.5s ease; }
+	.wrapper #first-section h4{ font-size: 18px; transition: all 0.5s ease; }
+	.wrapper #first-section h1{
+	  	font-size: 45px;
+	  	transition: all 0.5s ease;
+	  	color: #3c948b;
+	}
+	.wrapper #first-section p{
+		font-size: 12px;
+		 transition: all 0.5s ease;
+	}
+	.wrapper .title-bg{
+		font-size: 48px;
+		margin-left: -10px;
+		transition: all 0.5s ease;
+	}
+	.work{
+		transition: all 0.5s ease;
+		margin-top: 25px;
+		font-size: 30px;
+	}
+	#web-works a.project-title{
+		font-size: 25px;
+	}
+	#web-works p{
+		font-size: 8px;
+	}
+	#web-works a.project-title i{
+		font-size: 20px;
+		color: #ddd;
+		transition: all 0.3s ease-in-out;
+	}
+
+	#web-works .project-list .web-project:hover a.project-title i{
+		transform: translateX(0);
+		color: #3c948b;
+	}
+	#web-works .project-list .web-project .project-count{
+		font-size: 60px;
+		margin-left: -10px;
+	}
+	#web-works .project-list .web-project:hover .project-count{
+	  	transform: translateX(9px);
+	}
+
+}
