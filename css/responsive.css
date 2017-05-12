@@ -63,5 +63,13 @@
 	#web-works .project-list .web-project:hover .project-count{
 	  	transform: translateX(9px);
 	}
-
+	.web-project-header .work{
+		font-size: 30px
+	}
+	.title{
+		margin-bottom: 0px;
+	}
+	.web-project-footer .col-md-6:last-child{
+		margin-top: 13px;
+	}
 }

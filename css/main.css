@@ -115,10 +115,10 @@ ul, ol{
 
 .overlay nav {
   position: relative;
-  height: 100%;
+  min-height: 100%;
   top: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
   background: #1d1d1d;
   text-align: center;
 }
@@ -140,26 +140,27 @@ ul, ol{
   margin-left: 10px;
 }
 
-.overlay-menu ul li:hover #social-facebook {
+.overlay-menu ul li a#fb-icon:hover {
   color: #3b5998;
   cursor: pointer;
 }
 
-.overlay-menu ul li:hover #social-twitter {
+.overlay-menu ul li a#tw-icon:hover {
   color: #00aced;
   cursor: pointer;
 }
 
-.overlay-menu ul li:hover #social-linkedin {
+.overlay-menu ul li a#link-icon:hover {
   color: #007bb6;
   cursor: pointer;
 }
 
-.overlay-menu ul li:hover #social-steam {
+.overlay-menu ul li a#st-icon:hover {
   color: #666666;
   cursor: pointer;
 }
 
+/*
 .overlay-menu li#phone,
 .overlay-menu li#email,
 .overlay-menu li#fb {
@@ -191,23 +192,52 @@ ul, ol{
   margin: 0 auto;
   font-size: 14px;
 }
+.overlay-menu li:first-child {
+  margin-top: 100px;
+}
+*/
 
 .overlay-menu li {
   list-style-type: none;
   text-align: center;
   padding: 10px;
 }
-
 .overlay-menu li a {
-  font-size: 250%;
+  font-size: 177%;
   color: white;
   text-decoration: none;
   font-weight: 300;
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
-.overlay-menu li:first-child {
-  margin-top: 100px;
+.overlay-contact-info{
+  position: relative;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  bottom: 0;
+  position: absolute;
+  text-align: left;
+  padding: 0 20px;
+}
+.overlay-contact-info h3,
+.overlay-contact-info h5{
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+}
+.overlay-contact-info h5{
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: -10px;
+  text-align: left;
+}
+.overlay-contact-info h3{
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.overlay-contact-info a i{
+  font-size: 14px;
+  margin-right: 25px;
 }
 
 body .wrapper #first-section .mouse {
@@ -247,6 +277,7 @@ body #stars {
 
 body #stars:after {
   content: " ";
+  top: 2000px;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -267,6 +298,7 @@ body #stars2 {
 body #stars2:after {
   content: " ";
   position: absolute;
+  top: 2000px;
   width: 2px;
   height: 2px;
   border-radius: 50%;
@@ -287,6 +319,7 @@ body #stars3:after {
   content: " ";
   position: absolute;
   width: 4px;
+  top: 2000px;
   height: 4px;
   border-radius: 50%;
   background: transparent;
@@ -460,7 +493,7 @@ body .wrapper #first-section p strong {
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   color: #1d1d1d;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in;
   z-index: 1;
 }
 
@@ -475,7 +508,7 @@ body .wrapper #first-section p strong {
   margin-top: 20px;
   font-size: 28px;
   color: #ddd;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #web-works .project-list .web-project:hover a.project-title i{
