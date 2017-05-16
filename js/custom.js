@@ -8,6 +8,8 @@ $(document).ready(function(){
 
 		$('.parallax').parallax();
 
+		new WOW().init();
+
 		$('#toggle').click(function() {
 		   $(this).toggleClass('active');
 		   $('#overlay').toggleClass('open');
