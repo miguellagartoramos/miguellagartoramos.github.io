@@ -540,8 +540,9 @@ body .wrapper #first-section p strong {
   font-weight: 900;
 }
 #third-section img{
-
+  cursor: pointer;
 }
+
 .web-project-header{
    padding: 50px 0;
    border-top: 18px solid #FFF;
@@ -720,4 +721,8 @@ body .wrapper #first-section p strong {
   -webkit-column-count: 1;
   column-count:         1;
   }
+}
+
+.flex-images {
+  margin-top: 65px;
 }
