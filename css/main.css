@@ -32,6 +32,7 @@ ul, ol{
 .color-4 { background-color: #2e2538; }
 .color-5 { background-color: #1b1d1d; }
 .color-6 { background-color: #39383a; }
+.color-7 { background-color: #00aeef;}
 
 /* MENU */
 
@@ -538,7 +539,9 @@ body .wrapper #first-section p strong {
   text-transform: uppercase;
   font-weight: 900;
 }
+#third-section img{
 
+}
 .web-project-header{
    padding: 50px 0;
    border-top: 18px solid #FFF;
@@ -667,8 +670,54 @@ body .wrapper #first-section p strong {
    cursor: pointer;
 }
 .box .title-sm { padding-bottom: 13px; margin-bottom: 0; color: rgba(255,255,255,0.4); }
+
 .scrollup i {
   font-size: 14px;
   position: relative;
   top: 3px;
+}
+
+.image-grid {
+   line-height: 0;
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+}
+
+.image-grid img {
+  width: 100% !important;
+  height: auto !important;
+  padding: 10px;
+}
+
+@media (max-width: 1200px) {
+  .image-grid {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  .image-grid {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  .image-grid {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  .image-grid {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
 }
