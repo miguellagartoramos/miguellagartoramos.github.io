@@ -478,7 +478,9 @@ body .wrapper #first-section p strong {
   letter-spacing: 3px;
   position: relative;
 }
-
+.year strong{
+  font-weight: 900;
+}
 #web-works .project-list{
   position: relative;
   max-width: 100%;
@@ -789,15 +791,15 @@ body .wrapper #first-section p strong {
   margin-top: 80px;
   padding: 0;
 }
-.clr-1{background-color: #00aeef;}
-.clr-2{background-color: #2c3e50;}
-.clr-3{background-color: #34495e;}
-.clr-4{background-color: #3b3b3b;}
-.clr-5{background-color: #566371;}
-.clr-6{background-color: #c0392b;}
-.clr-7{background-color: #212121;}
-.clr-8{background-color: #3b3b3b;}
-.clr-9{background-color: #e7ecea;}
+.clr-1 {background-color: #00aeef;}
+.clr-2 {background-color: #2c3e50;}
+.clr-3 {background-color: #34495e;}
+.clr-4 {background-color: #3b3b3b;}
+.clr-5 {background-color: #566371;}
+.clr-6 {background-color: #c0392b;}
+.clr-7 {background-color: #212121;}
+.clr-8 {background-color: #3b3b3b;}
+.clr-9 {background-color: #e7ecea;}
 .clr-10{background-color: #ed3237;}
 .clr-11{background-color: #000000;}
 .clr-12{background-color: #2d3339;}
