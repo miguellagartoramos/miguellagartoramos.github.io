@@ -47,7 +47,7 @@ ul, ol{
   top: 4%;
   right: 2%;
   height: 27px;
-  width: 35px;
+  width: 25px;
   cursor: pointer;
   z-index: 9999;
   -webkit-transition: opacity .25s ease;
@@ -56,19 +56,27 @@ ul, ol{
 .button:hover {
   opacity: .7;
 }
+.button .top{
+  width: 15px;
+}
+.button .bottom{
+  width: 20px;
+}
 .button.active .top {
-  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
-          transform: translateY(11px) translateX(0) rotate(45deg);
-  background: #EEE;
+  -webkit-transform: translateY(8px) translateX(0) rotate(45deg);
+          transform: translateY(8px) translateX(0) rotate(45deg);
+  background: #ddd;
+  width: 100%;
 }
 .button.active .middle {
   opacity: 0;
-  background: #EEE;
+  background: #ddd;
 }
 .button.active .bottom {
-  -webkit-transform: translateY(-11px) translateX(0) rotate(-225deg);
-          transform: translateY(-11px) translateX(0) rotate(-225deg);
-  background: #EEE;
+  -webkit-transform: translateY(-8px) translateX(0) rotate(-225deg);
+          transform: translateY(-8px) translateX(0) rotate(-225deg);
+  background: #ddd;
+  width: 100%;
 }
 .button span {
   background: #FFF;
@@ -83,12 +91,21 @@ ul, ol{
   cursor: pointer;
 }
 .button span:nth-of-type(2) {
-  top: 11px;
+  top: 8px;
 }
 .button span:nth-of-type(3) {
-  top: 22px;
+  top: 16px;
 }
-
+.button h6{
+  position: fixed;
+  right: 4.5%;
+  top: 3.5%;
+  color: #ddd;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
 .overlay {
   position: fixed;
   background: #1e1e1e;
@@ -338,6 +355,7 @@ body #stars3:after {
   position: relative;
   padding: 0;
   -webkit-transform-style: preserve-3d;
+  height: 100%;
 }
 
 .wrapper h2{
@@ -437,7 +455,6 @@ body .wrapper #first-section p strong {
   font-weight: 900;
   text-transform: uppercase;
   font-size: 68px;
-  z-index: -1;
 }
 .work{ 
   font-family: 'Raleway', sans-serif;
@@ -568,61 +585,65 @@ body .wrapper #first-section p strong {
 }
 
 .web-project-header{
-  padding: 50px 0;
+  position: relative;
+  height: 1000px;
+  background-color: #1f272f;
+  padding: 180px 0;
 }
 
 .web-project-header .title-bg{
     margin-left: -30;
     font-size: 150px;
     margin-top: -20px;
+    color: rgba(255,255,255,0.1);
 }
 
-/*
-.web-project-header .work,
-.web-project-header .title-sm{
-  margin: 0 0 15px 0;
-  padding: 0;
-  color: #fff;
-}
-*/
-.home-btn{ }
 .home-btn a { text-decoration: none; }
 .home-btn a:hover,
 .home-btn a:focus
 .home-btn a:active{
 }
-.web-project-header{
-  padding-left: 150px;
-  padding-right: 150px;
-  position: relative;
+/*
+.floating-title{
+  position: absolute;
+  right: 20%;
+  color: #1f272f;
+  padding: 0 15px;
+  background-color: #fafafa;
+  z-index: 999;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 48px;
 }
+*/
 .web-project-header .work{ 
   position: relative;
-  font-size: 58px; 
+  font-size: 65px; 
   text-transform: capitalize;
   padding-left: 15px;
+  color: #fff;
 }
 .web-project-header .work:after{
   content: '';
   display: inline-block;
-  width: 3px;
+  width: 2px;
   height: 120px;
   margin: 0;
   padding: 0;
-  background-color: #ddd;
+  background-color: rgba(255,255,255,0.1);
   float: right;
 }
 .web-project-header a{
   position: relative;
-  font-size: 12px;
-  padding: 13px 22px;
-  border-radius: 20px;
-  border: 2px solid #c4c4c4;
-  text-transform: uppercase;
+  font-size: 11px;
+  padding: 18px;
   font-weight: 600;
   text-decoration: none;
-  color: #c4c4c4;
-  background-color: #f9fafb
+  color: #1f272f;
+  background-color: #fff;
+  margin-left: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .web-project-header a i.material-icons{
   vertical-align:middle;
@@ -633,41 +654,14 @@ body .wrapper #first-section p strong {
 .web-project-header a:hover i{
   transform: translateX(7px);
 }
-
-
-/*
-
-  position: relative;
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #ddd;
-  background-color: transparent;
-  border: 2px solid #ddd;
-  border-radius: 20px;
-  text-transform: uppercase;
-  padding: 8px 22px;
-  padding-top:13px;
-  margin-top: 26px;
-  font-weight: 600;
-  text-decoration: none;
-
-.web-project-header p:before{
-  content: '';
-  display: block;
-  width: 180px;
-  height: 13px;
-  background-color: #3c948b;
-}
-*/
-
-.web-project-header .year { margin-top: -26px; color: #1e1e1e;}
+.web-project-header .year { margin-top: -26px; color: #fff;}
 .web-project-header p{
   margin: 50px 0;
   font-size: 16px;
   font-weight: 400;
-  color: #1e1e1e;
+  color: #fff;
   position: relative;
-  line-height: 45px;
+  line-height: 35px;
   font-family: 'Arvo', serif;
 }
 .web-project-header p:before{
@@ -675,7 +669,7 @@ body .wrapper #first-section p strong {
   display: block;
   width: 50px;
   height: 3px;
-  background-color: #3c948b;
+  background-color: rgba(255,255,255,0.1);
   margin-bottom: 40px;
 }
 .web-project-header ul{
@@ -687,13 +681,17 @@ body .wrapper #first-section p strong {
   text-align: right;
   font-weight: 100;
   font-family: "Roboto", sans-serif;
-  color: #1e1e1e;
+  color: rgba(255,255,255,0.3);
   margin-top: 6px;
   letter-spacing: 3px;
   font-size: 10px;
 }
+.web-project-header .title-sm{
+  color: #fff;
+}
+
 .web-project-header li i{
-  color: #c4c4c4;
+  color: rgba(255,255,255,02);
   margin-left: 10px;
   font-size: 16px;
   vertical-align: middle;
@@ -701,17 +699,17 @@ body .wrapper #first-section p strong {
 .web-project-body {
   position: relative;
   padding: 50px 0;
+  transform: translateY(-250px);
 }
 .web-project-body .work{
   margin-top: 0;
-  margin-bottom: 100px;
+  font-size: 32px;
 }
 .web-project-body h4{
   margin-left: 0px;
   font-weight: 900;
   font-family: 'Raleway', sans-serif;
 }
-
 .web-project-body h4::after{
   content: ' ';
   display: block;
@@ -730,8 +728,13 @@ body .wrapper #first-section p strong {
 .web-project-body .title-sm{
     padding-bottom: 0;
 }
+.web-project-body .title-sm:first-child{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
 .web-project-body img{
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 .web-project-body .btn-primary{
   margin: 0 auto;
@@ -832,9 +835,9 @@ body .wrapper #first-section p strong {
   position: relative;
   padding: 50px 0;
   margin: 0;
-  margin-top: 70px;
   color: #fff;
   background-color: #1e1e1e;
+  margin-top: -100px;
 }
 .web-project-footer .container {
   padding: 0;

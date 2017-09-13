@@ -28,6 +28,7 @@
 	<body>
 
 	<div class="button" id="toggle">
+		<h6>MENU</h6>
 	  	<span class="top"></span>
 	  	<span class="middle"></span>
 	  	<span class="bottom"></span>
@@ -69,32 +70,38 @@
 	<div class="scrollup"><i class="material-icons">keyboard_backspace</i> TOP</div>
 	<div class="wrapper animsition">
 		<div class="web-project-header">
+			<div class="container">
 				<div class="row">
-				<h5 class="title-sm">&ndash; PROJECT NAME</h5>
-				<span class="year pull-right">Y &ndash; <strong>2016</strong></span>
-				<div class="title-bg">04.</div>
-				<h3 class="work">Turnstile</h3>
-				<div class="col-md-7">
-					<p>Professional’s turnstile authority and the globally trusted name in pedestrian control devices.</p>
+					<h5 class="title-sm">&ndash; PROJECT NAME</h5>
+					<span class="year pull-right">Y &ndash; <strong>2016</strong></span>
+					<div class="title-bg">04.</div>
+					<h3 class="work">Turnstile</h3>
+					<div class="col-md-7">
+						<p>Professional’s turnstile authority and the globally trusted name in pedestrian control devices.</p>
+					</div>
+					<div class="col-md-5"> 
+						<ul>
+							<li>HTML<i class="fa fa-html5" aria-hidden="true"></i></li>
+							<li>CSS<i class="fa fa-css3" aria-hidden="true"></i></li>
+							<li>BOOTSTRAP<i class="fa fa-desktop" aria-hidden="true"></i></li>
+							<li>GRAPHICS<i class="fa fa-picture-o" aria-hidden="true"></i></li>
+						</ul>
+					</div>
 				</div>
-				<div class="col-md-5"> 
-					<ul>
-						<li>HTML<i class="fa fa-html5" aria-hidden="true"></i></li>
-						<li>CSS<i class="fa fa-css3" aria-hidden="true"></i></li>
-						<li>BOOTSTRAP<i class="fa fa-desktop" aria-hidden="true"></i></li>
-						<li>GRAPHICS<i class="fa fa-picture-o" aria-hidden="true"></i></li>
-					</ul>
+				<div class="row">
+					<a href="http://turnstile.com.ph/" target="_blank">VISIT <i class="material-icons">trending_flat</i></a>
 				</div>
 			</div>
-			<a href="http://turnstile.com.ph/" target="_blank">VISIT PROJECT <i class="material-icons">trending_flat</i></a>
 		</div>
 		<div class="web-project-body">
 			<div class="container">
-				<h5 class="title-sm text-center">&ndash; LAYOUT &ndash; </h5>
-				<h3 class="work text-center">Homepage</h3>
-				<div class="web-pages wow fadeIn" data-wow-delay="0.3s">
+				<h5 class="title-sm pull-right"><strong>HOMEPAGE</strong> LAYOUT</h5>
+				<div>
 					<img src="media/image/turnstile-layout.png" class="img-responsive center-block">
 				</div>
+
+				<h3 class="work">CHARACTERS</h3>
+				<h5 class="title-sm">&ndash; FONTS</h5>
 
 				<div class="fonts">
 					<div class="row raleway-font">
@@ -112,8 +119,8 @@
 					</div>
 				</div>
 
-				<h5 class="title-sm text-center">&ndash; RGB & HEX &ndash; </h5>
-				<h3 class="work text-center">COLORS</h3>
+				<h3 class="work">COLOR PALETTE</h3>
+				<h5 class="title-sm">&ndash; RGB & HEX</h5>
 
 				<div class="colors">
 					<div class="row no-gutters">
@@ -207,10 +214,12 @@
 
         $(document).scroll(function() { 
             position = $(this).scrollTop();
-            if(position > height_first_section) {
+			if(position > height_first_section) {
                 $(".button span").css('background', '#DDD');
+                $(".button h6").css('color', '#DDD');
             } else {
                 $(".button span").css('background', '#FFFFFF');
+                $(".button h6").css('color', '#FFFFFF');
             }
         });
 	});
