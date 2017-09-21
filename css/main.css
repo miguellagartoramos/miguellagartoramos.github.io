@@ -65,21 +65,21 @@ ul, ol{
 .button.active .top {
   -webkit-transform: translateY(8px) translateX(0) rotate(45deg);
           transform: translateY(8px) translateX(0) rotate(45deg);
-  background: #ddd;
+  background: #f76c6c;
   width: 100%;
 }
 .button.active .middle {
   opacity: 0;
-  background: #ddd;
+  background: #f76c6c;
 }
 .button.active .bottom {
   -webkit-transform: translateY(-8px) translateX(0) rotate(-225deg);
           transform: translateY(-8px) translateX(0) rotate(-225deg);
-  background: #ddd;
+  background: #f76c6c;
   width: 100%;
 }
 .button span {
-  background: #FFF;
+  background: #f76c6c;
   border: none;
   height: 3px;
   width: 100%;
@@ -105,6 +105,8 @@ ul, ol{
   font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   letter-spacing: 1px;
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
 }
 .overlay {
   position: fixed;
@@ -228,7 +230,7 @@ ul, ol{
 }
 .overlay-menu li a {
   font-size: 177%;
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: 300;
   width: 100%;
@@ -385,12 +387,12 @@ body #stars3:after {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  color: #3c948b;
+  color: #f76c6c;
 }
 
 .wrapper #first-section code{
   color: #fff;
-  background-color: #3c948b;
+  background-color: #f76c6c;
 }
 .wrapper #first-section h4 {
   position: relative;
@@ -419,10 +421,10 @@ body #stars3:after {
 }
 
 body .wrapper #first-section p strong {
-  color: #3c948b;
-  border-bottom: 1px dotted #3c948b;
+  color: #f76c6c;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 400;
+  font-size: 83%;
   text-shadow: 0 3px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -472,7 +474,7 @@ body .wrapper #first-section p strong {
   margin-bottom: 30px;
 }
 .title span{ font-weight: 100; }
-.title span strong{ font-weight: 900; color: #3c948b; }
+.title span strong{ font-weight: 900; color: #f76c6c; }
 .title-sm {
   font-weight: 100;
   font-size: 10px;
@@ -527,7 +529,7 @@ body .wrapper #first-section p strong {
 #web-works a.project-title{
   font-size: 35px;
   font-weight: 900;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Arvo', serif;
   text-decoration: none;
   color: #1e1e1e;
   transition: all 0.3s ease-in-out;
@@ -536,7 +538,7 @@ body .wrapper #first-section p strong {
 }
 
 #web-works .project-list .web-project:hover .project-title{
-  color: #3c948b;
+  color: #f76c6c;
 }
 
 #web-works .project-list .web-project:hover .project-count{
@@ -551,7 +553,7 @@ body .wrapper #first-section p strong {
 
 #web-works .project-list .web-project:hover a.project-title i{
   transform: translateX(20px);
-  color: #3c948b;
+  color: #f76c6c;
 }
 
 #web-works p{
@@ -592,7 +594,7 @@ body .wrapper #first-section p strong {
 }
 
 .web-project-header .title-bg{
-    margin-left: -30;
+    margin-left: -30px;
     font-size: 150px;
     margin-top: -20px;
     color: rgba(255,255,255,0.1);
@@ -622,6 +624,11 @@ body .wrapper #first-section p strong {
   text-transform: capitalize;
   padding-left: 15px;
   color: #fff;
+}
+.web-project-header .work span{
+  color: #f76c6c;
+  font-size: 70px;
+  font-family: 'Montserrat', sans-serif;
 }
 .web-project-header .work:after{
   content: '';
@@ -717,6 +724,15 @@ body .wrapper #first-section p strong {
   width: 30px;
   margin: 18px 0;
 }
+.web-project-body .title-bg{
+    min-height: 0%;
+    font-size: 80px;
+    margin-left: 8px;
+    margin-top: -35px;
+    z-index: -1;
+    font-family: 'Arvo', serif;
+    color: #efefef;
+}
 
 .web-project-body p{
   font-weight: 400;
@@ -734,7 +750,8 @@ body .wrapper #first-section p strong {
     margin-bottom: 20px;
 }
 .web-project-body img{
-  margin-bottom: 80px;
+  margin-bottom: 120px;
+  box-shadow: 0 15px 60px 15px rgba(0,0,0,.2);
 }
 .web-project-body .btn-primary{
   margin: 0 auto;
@@ -768,10 +785,12 @@ body .wrapper #first-section p strong {
 .varela-font{font-family: 'Varela Round', sans-serif;}
 
 .web-project-body .fonts h3 {
-  font-weight: 900;
   font-size: 22px;
-  color: #1e1e1e;
+  color: #f76c6c;
   font-family: 'Arvo', serif;
+}
+.web-project-body .fonts h3:after{
+  
 }
 .web-project-body .fonts h5{
   font-size: 14px;
