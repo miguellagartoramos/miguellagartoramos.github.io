@@ -433,7 +433,6 @@ body .wrapper #first-section p strong {
   color: #1e1e1e;
   font-family: 'Montserrat', sans-serif;
   padding: 50px 0;
-  background-color: #fff;
   /*
         outline: 2px solid #fff;
         outline-offset: -30px;
@@ -567,7 +566,6 @@ body .wrapper #first-section p strong {
   color: #1e1e1e;
   font-family: 'Montserrat', sans-serif;
   padding: 50px 0;
-  background-color: #fff;
 }
 
 .wrapper #third-section p{ 
@@ -849,7 +847,6 @@ body .wrapper #first-section p strong {
 .clr-name{
   font-weight: 600;
 }
-
 .web-project-footer {
   position: relative;
   padding: 50px 0;
@@ -865,10 +862,29 @@ body .wrapper #first-section p strong {
   margin: 0;
   padding: 0;
 }
-.web-project-footer .row:last-child{
-  background-color: #282828;
-  margin-top: 50px;
-  padding: 10px 0;
+.web-project-footer .row:last-child a{
+    background-color: transparent;
+    margin-top: 20px;
+    padding: 20px;
+    color: #fff;
+    border: 3px solid #fff;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-right: 15px;
+    font-size: 11px;
+    float: right;
+    transition: all .35s ease;
+}
+.web-project-footer .row:last-child a:hover{
+    background-color: #fff;
+    color: #1e1e1e;
+}
+
+.web-project-footer .row:last-child span{
+    font-size: 11px;
+    margin-left: 15px;
+    margin-top: 20px;
+    color: #9b9b9b;
 }
 .next-project .next-project-name h3{
   font-weight: 900;
@@ -954,6 +970,12 @@ a.home-link:before{
   font-size:  13px;
   font-family: 'Montserrat', sans-serif;
   text-align: right;
+}
+.web-project-footer h4 i{
+  vertical-align: middle;
+  font-size: 13px;
+  color: #f76c6c;
+  margin-left: 6px;
 }
 /* steam hover */
 .web-project-footer li a#st-icon:after{
