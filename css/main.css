@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,900');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,900');
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
 html, body{
   height: 100%;
 }
@@ -24,7 +32,6 @@ ul, ol{
   padding: 0;
   list-style-type: none;
 }
-
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -34,7 +41,6 @@ ul, ol{
   padding-right: 0;
   padding-left: 0;
 }
-
 .color-html5{color: #e44d26;}
 .color-css3{color: #1572b6;}
 .color-bootstrap{color:#563d7c;}
@@ -438,7 +444,6 @@ body .wrapper #first-section p strong {
         outline-offset: -30px;
   */
 }
-
 .wrapper #web-works,
 .wrapper #graphic-works{ 
   margin-top: 45px;
