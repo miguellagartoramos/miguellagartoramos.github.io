@@ -19,7 +19,7 @@ body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+        
 }
 
 /* GLOBAL STYLE */
@@ -144,16 +144,10 @@ ul, ol{
   visibility: visible;
   height: 100%;
 }
-
-.overlay nav {
-  position: relative;
-  min-height: 100%;
-  top: 0;
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
-  background: #1e1e1e;
-  text-align: center;
+.overlay .logo{
+  color: red;
 }
+
 .overlay-menu .contact-details {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -191,44 +185,6 @@ ul, ol{
   color: #666666;
   cursor: pointer;
 }
-
-/*
-.overlay-menu li#phone,
-.overlay-menu li#email,
-.overlay-menu li#fb {
-  font-weight: 100;
-  letter-spacing: 1px;
-  font-family: 'Montserrat', sans-serif;
-  margin: 10px;
-}
-
-.overlay-menu li#phone:before {
-  content: 'CONTACT';
-  display: block;
-  font-weight: 900;
-  margin: 0 auto;
-  font-size: 14px;
-}
-
-.overlay-menu li#email:before{
-  content: 'EMAIL';
-  display: block;
-  font-weight: 900;
-  margin: 0 auto;
-  font-size: 14px;
-}
-.overlay-menu li#fb:before {
-  content: 'FACEBOOK';
-  display: block;
-  font-weight: 900;
-  margin: 0 auto;
-  font-size: 14px;
-}
-.overlay-menu li:first-child {
-  margin-top: 100px;
-}
-*/
-
 .overlay-menu li {
   list-style-type: none;
   text-align: center;
