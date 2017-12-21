@@ -1,18 +1,101 @@
-
 @media only screen and (max-width: 992px){
 	.web-project-header,
 	.web-project-footer{
-	  padding-left: 50px;
-	  padding-right: 50px;
+	  padding-left: 15px;
+	  padding-right: 15px;
 	  position: relative;
+	}
+	.web-project-header{
+		padding-top: 100px;
+	}
+	.web-project-header .work:after,
+	.web-project-header li{
+		visibility: hidden;
+	}
+	.web-project-header p{
+		margin: 25px 0;
+		font-size: 14px;
+		transition: all .3s ease-in-out;
+	}
+	.web-project-header p:before{ margin-bottom: 15px }
+	.web-project-header ul{ margin-top: 0; }
+	.button h6{ right: 8%; }
+	.web-project-footer h4{ clear: both;}
+	.web-project-header{ height: 860px; }
+	.web-project-body .fonts ul li { font-size: 32px; }
+	.overlay-menu ul.nav-link{ margin: 90px 0; }
+	.web-project-body .fonts,
+	.web-project-body .colors{
+		margin-top: 20px;
+	}
+	.web-project-footer ul.social-account li{
+		float: left;
+		padding: 0;
+		padding-right: 20px;
+		margin-bottom: 20px;
+	}
+	.overlay-menu ul li.top-link a{ font-size: 42px; }
+	.overlay-menu ul li a{
+	    font-size: 32px;
+	    margin-bottom: 10px;
+	}
+	.overlay-contact-details{
+		height: auto;
+	}
+	.overlay-contact-details .info{
+		position: absolute;
+		top: 50%;
+	    font-size: 11px;
+	}
+	.overlay-contact-details .social-media{
+		position: absolute;
+		bottom: 5%;
+	    font-size: 11px;
+	}
+	.web-project-footer ul.social-account{
+		display: table;
+		margin: 0 auto;
+	}
+	.next-project{
+		text-align: center;
+	}
+	.web-project-footer h4{
+		text-align: center;
+	}
+	.web-project-footer .row:last-child a{
+		text-align: center;
+		width: 100%;	
+		margin-right: 0;
+	}
+	.web-project-footer .row:last-child{
+		width: 100%;
+	    text-align: center;
+	    margin: 0 auto;
+	}
+	.web-project-footer .row:last-child span{
+		visibility: hidden;
 	}
 }
 @media only screen and (max-width: 720px) {
+	.overlay-contact-info li{
+		float: none;
+	}
+	.next-project{
+		text-align: center;
+	}
 	.button {
 		top: 4%;
-		right: 5%;
+		right: 9%;
 		height: 16px;
 		width: 25px;
+	}
+	.button h6{
+		visibility: hidden;
+	}
+	.web-project-header .work{
+		padding: 0;
+		margin-top: 0;
+		margin-left: 12px;
 	}
 	.button span { height: 3px; }
 	.button span:nth-of-type(2) { top: 7px; }
@@ -29,25 +112,53 @@
 	}
 	.wrapper #first-section { height: 700px }
 	.wrapper #first-section{ padding: 0 20px; transition: all 0.5s ease; }
-	.wrapper #first-section h4{ font-size: 18px; transition: all 0.5s ease; }
+	.wrapper #first-section h4{ font-size: 18px; transition: all 0.5s ease; top: 160px;}
 	.wrapper #first-section h1{
 	  	font-size: 45px;
 	  	transition: all 0.5s ease;
-	  	color: #3c948b;
+	  	color: #f76c6c;
+	  	top: 172px;
+	}
+	.web-project-header .work span{
+		font-size: 40px;
 	}
 	.wrapper #first-section p{
 		font-size: 12px;
 		 transition: all 0.5s ease;
+		 top: 200px;
 	}
 	.wrapper .title-bg{
-		font-size: 48px;
+		font-size: 44px;
 		margin-left: -10px;
+		margin-top: 15px;
 		transition: all 0.5s ease;
+		z-index: -1;
 	}
 	.work{
 		transition: all 0.5s ease;
 		margin-top: 25px;
 		font-size: 30px;
+	}
+	.web-project-footer h4{
+		text-align: center;
+	}
+	.wrapper #third-section p{
+		line-height: 32px;
+		font-size: 14px;
+	}
+	.web-project-footer ul.social-account li{
+		float: left;
+		padding: 0;
+		padding-right: 20px;
+		margin-bottom: 20px;
+	}
+	.web-project-footer .row:last-child a{
+		width: 100%;
+		text-align: center;
+		margin-right: 0;
+	}
+	.web-project-footer .row:last-child span{
+		margin-left: 0;
 	}
 	#web-works a.project-title{
 		font-size: 25px;
@@ -63,7 +174,7 @@
 
 	#web-works .project-list .web-project:hover a.project-title i{
 		transform: translateX(0);
-		color: #3c948b;
+		color: #f76c6c;
 	}
 	#web-works .project-list .web-project .project-count{
 		font-size: 60px;

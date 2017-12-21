@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Miguel Ramos</title>
@@ -19,85 +19,48 @@
     <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" rel="stylesheet"/>-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
     <link href='css/animate.css' rel='stylesheet'>
+    <link href='css/sample.css' rel='stylesheet'>
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">-->
   
   </head>
 
   <body>
-  <!--
-   <div class="container">
-      <div class="mobilenav">
-        <div id="mobilenav-content">
-            <ul class="contact-details">
-              <li id="email">miguellagartoramos@gmail.com</li>
-              <li id="phone">+639 000 000 000</li>
-              <li>
-                <a href="" id="social-facebook">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-              </li>
+  <div class="container">
+    <h1>Top right corner, click it!</h1>
+    <p>View type 2 <a href="https://codepen.io/PaulVanO/pen/GgGeyE" target="_blank">here</a></p>
+  </div>
 
-              <li>
-                <a href="" id="social-twitter">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-              </li>
+  <div class="button" id="toggle">
+      <!---->
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+  </div>
 
-              <li>
-                <a href="" id="social-linkedin">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </li>
-
-              <li>
-                <a href="" id="social-steam">
-                  <i class="fa fa-steam" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
-        </div>
-      </div>
-
-      <a href="#" class="icon">
-        <div class="hamburger">
-          <div class="menui top-menu"></div>
-          <div class="menui mid-menu"></div>
-          <div class="menui bottom-menu"></div>
-        </div>
-      </a>
+  <div class="overlay" id="overlay">
+    <nav class="overlay-menu">
+      <h4>MIGUEL.</h4>
+      <ul class="nav-link">
+         <li class="top-link"><a href="#">Home</a></li>
+         <li><a href="#">Next project</a></li>
+         <li><a href="#">Previous project</a></li>
+      </ul>
+    </nav>
+    <div class="overlay-contact-details">
+      <ul class="info">
+        <li>miguellagartoramos@gmail.com</li>
+        <li>+63.9262.874.821</li>
+        <li class="address">Bulacan, Philippines 3024</li>
+      </ul>
+      <ul class="social-media">
+        <li><a id="fb-icon" href="https://www.facebook.com/MiguelLagartoRamos" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a id="tw-icon" href="https://twitter.com/kornets404" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a id="link-icon" href="https://www.linkedin.com/in/miguel-ramos-6b2093119/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a id="st-icon" href="https://steamcommunity.com/id/404itemnotfound/" target="_blank"><i class="fa fa-steam" aria-hidden="true"></i></a></li>                   
+      </ul>
     </div>
-    -->
-
-    <div class="wrapper">
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
-      <div id="first-section">
-        <div class="parallax-container">
-          <div class="container text-center">
-              <h4>I'm</h4>
-              <h1>Sample</h1>
-              <p>A <strong>Web Designer</strong>, I've been working for almost 1 year as a part of Advertising team Creating a <strong>User-friendly</strong> and <strong>Responsive Website</strong> is my Passion, I can also do some <strong>Graphic works</strong> like Branding, Business Cards, Logos, Catalogs and Poster. Some of my works are listed here on my portfolio.</p>
-          </div>
-
-
-          <div class="parallax">
-                    
-           
-
-          </div>
-        </div>
-      </div>
-
-      <div id="second-section">
-      <div class="container">
-        <div class="row">
-          <p>asdasdasd</p>
-        </div>
-      </div>
-    </div>
+  </div>
 
 
     <!-- Bootstrap core JavaScript
@@ -107,6 +70,12 @@
     <script src="js/bootstrap.min.js"></script>
     <!--    <script src="js/materialize.js"></script>-->
     <script src="js/init.js"></script>
+    <script>
+      $('#toggle').click(function() {
+       $(this).toggleClass('active');
+       $('#overlay').toggleClass('open');
+      });
+    </script>
 
 
   </body>
