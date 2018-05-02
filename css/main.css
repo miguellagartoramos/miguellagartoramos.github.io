@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 
 html, body{
     height: 100%;
@@ -202,7 +203,7 @@ ul, ol{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
 }
-.overlay-contact-details li{ margin-bottom: 3px; }
+.overlay-contact-details li{ margin-bottom: 3px; letter-spacing: 1.5px;}
 .overlay-contact-details ul li.address{
     font-weight: 800;
     font-family: 'Montserrat', sans-serif;
@@ -594,7 +595,7 @@ body .wrapper #first-section p strong {
 .web-project-header .work:after{
     content: '';
     display: inline-block;
-    width: 2px;
+    width: 3px;
     height: 120px;
     margin: 0;
     padding: 0;
@@ -604,11 +605,12 @@ body .wrapper #first-section p strong {
 .web-project-header a{
     position: relative;
     font-size: 11px;
-    padding: 18px;
+    padding: 18px 25px;
     font-weight: 600;
     text-decoration: none;
-    color: #1f272f;
-    background-color: #fff;
+    color: #FFF;
+    border: 3px solid #FFF;
+    background-color: transparent;
     margin-left: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -622,7 +624,7 @@ body .wrapper #first-section p strong {
 .web-project-header a:hover i{
     transform: translateX(7px);
 }
-.web-project-header .year { margin-top: -26px; color: #fff;}
+.web-project-header .year { margin-top: -41px; color: #fff;}
 .web-project-header p{
     margin: 50px 0;
     font-size: 16px;
@@ -635,10 +637,10 @@ body .wrapper #first-section p strong {
 .web-project-header p:before{
     content: '';
     display: block;
-    width: 50px;
-    height: 3px;
-    background-color: rgba(255,255,255,0.1);
-    margin-bottom: 40px;
+    width: 40px;
+    height: 5px;
+    background-color: #FFF;
+    margin-bottom: 50px;
 }
 .web-project-header ul{
     margin-top: 70px;
@@ -744,6 +746,7 @@ body .wrapper #first-section p strong {
 .georgia-font{ font-family: Georgia;}
 .lato-font{ font-family: 'Lato', sans-serif;}
 .varela-font{ font-family: 'Varela Round', sans-serif;}
+.quicksand-font { font-family: 'Quicksand', sans-serif; }
 
 .web-project-body .fonts h3 {
     font-size: 22px;
@@ -799,6 +802,9 @@ body .wrapper #first-section p strong {
 .clr-23{background-color: #39383a;}
 .clr-24{background-color: #343435;}
 .clr-25{background-color: #252626;}
+.clr-26{background-color: #79c045;}
+.clr-27{background-color: #444444;}
+.clr-28{background-color: #f1f1f1;}
 
 .clr-box{
     height: 120px;
@@ -857,6 +863,7 @@ body .wrapper #first-section p strong {
     margin-left: 15px;
     margin-top: 20px;
     color: #9b9b9b;
+    letter-spacing: 1.3px;
 }
     .next-project .next-project-name h3{
     font-weight: 900;
@@ -932,16 +939,19 @@ a.home-link:before{
     margin-bottom: 25px;
 }
 .web-project-footer li a{
-    color: #9b9b9b;
+    color: #FFF;
     font-size:  10px;
     text-transform: uppercase;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 .web-project-footer h4{
     color: #fff;
     font-size:  13px;
     font-family: 'Montserrat', sans-serif;
     text-align: right;
+    letter-spacing: 1.5px;
 }
 .web-project-footer h4 i{
     vertical-align: middle;
@@ -949,70 +959,45 @@ a.home-link:before{
     color: #f76c6c;
     margin-left: 6px;
 }
-/* steam hover */
-.web-project-footer li a#st-icon:after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    margin-top: 5px;
-    transition: all 0.3s ease-in-out;
-    visibility: hidden;
-    opacity: 0;
-}
-.web-project-footer li a#st-icon:hover:after{
+.web-project-footer li a#st-icon:hover:after,
+.web-project-footer li a#ig-icon:hover:after,
+.web-project-footer li a#be-icon:hover:after,
+.web-project-footer li a#link-icon:hover:after,
+.web-project-footer li a#git-icon:hover:after,
+.web-project-footer li a#fb-icon:hover:after{
     visibility: visible;
     opacity: 1;
 }
-/* behance hover */
-.web-project-footer li a#be-icon:after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #0057ff;
-    margin-top: 5px;
-    transition: all 0.3s ease-in-out;
-    visibility: hidden;
-    opacity: 0;
-}
-.web-project-footer li a#be-icon:hover:after{
-    visibility: visible;
-    opacity: 1;
-}
-/* linkedin hover */
-.web-project-footer li a#link-icon:after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #0077b5;
-    margin-top: 5px;
-    transition: all 0.3s ease-in-out;
-    visibility: hidden;
-    opacity: 0;
-}
-.web-project-footer li a#link-icon:hover:after{
-    visibility: visible;
-    opacity: 1;
-}
-/* Facebook hover */
+
+.web-project-footer li a#st-icon:after,
+.web-project-footer li a#ig-icon:after,
+.web-project-footer li a#be-icon:after,
+.web-project-footer li a#link-icon:after,
+.web-project-footer li a#git-icon:after,
 .web-project-footer li a#fb-icon:after{
     content: '';
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #3b5998;
     margin-top: 5px;
     transition: all 0.3s ease-in-out;
     visibility: hidden;
     opacity: 0;
 }
-.web-project-footer li a#fb-icon:hover:after{
-    visibility: visible;
-    opacity: 1;
-}
+
+/* steam hover */
+.web-project-footer li a#st-icon:after{ background-color: #fff; }
+/* instagram hover */
+.web-project-footer li a#ig-icon:after{ background-color: #654dcc; }
+/* behance hover */
+.web-project-footer li a#be-icon:after{ background-color: #0057ff; }
+/* linkedin hover */
+.web-project-footer li a#link-icon:after{ background-color: #0077b5; }
+/* github hover */
+.web-project-footer li a#git-icon:after{ background-color: #00bcd4; }
+/* Facebook hover */
+.web-project-footer li a#fb-icon:after{ background-color: #3b5998; }
+
 .next-project a i.material-icons {
     vertical-align: middle;
 }
