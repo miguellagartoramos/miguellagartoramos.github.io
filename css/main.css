@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,600,900');
+
 
 html, body{
     height: 100%;
@@ -714,6 +716,7 @@ body .wrapper #first-section p strong {
 }
 .web-project-body img{
     margin-bottom: 120px;
+    border-radius: 7px;
     box-shadow: 0 15px 60px 15px rgba(0,0,0,.2);
 }
 .web-project-body .btn-primary{
@@ -747,6 +750,7 @@ body .wrapper #first-section p strong {
 .lato-font{ font-family: 'Lato', sans-serif;}
 .varela-font{ font-family: 'Varela Round', sans-serif;}
 .quicksand-font { font-family: 'Quicksand', sans-serif; }
+.lato-font { font-family: 'Lato',sans-serif; }
 
 .web-project-body .fonts h3 {
     font-size: 22px;
@@ -763,10 +767,11 @@ body .wrapper #first-section p strong {
     text-transform: uppercase;
 }
 .web-project-body .fonts ul li {
-    font-size: 40px;
+    font-size: 36px;
     color: #1e1e1e;
     font-weight: 600;
     word-wrap:break-word;
+    letter-spacing: 1.5px;
 }
 .web-project-body .fonts ul li:last-child{
     margin-bottom: 30px;
@@ -805,6 +810,8 @@ body .wrapper #first-section p strong {
 .clr-26{background-color: #79c045;}
 .clr-27{background-color: #444444;}
 .clr-28{background-color: #f1f1f1;}
+.clr-29{background-color: #df2226;}
+.clr-30{background-color: #363636;}
 
 .clr-box{
     height: 120px;
