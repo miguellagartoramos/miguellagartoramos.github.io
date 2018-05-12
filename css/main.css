@@ -559,8 +559,8 @@ body .wrapper #first-section p strong {
 
 .web-project-header .title-bg{
     margin-left: -30px;
-    font-size: 150px;
-    margin-top: -20px;
+    font-size: 180px;
+    margin-top: -30px;
     color: rgba(255,255,255,0.1);
 }
 
@@ -761,7 +761,7 @@ body .wrapper #first-section p strong {
   
 }
 .web-project-body .fonts h5{
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Montserrat', sans-serif;
     color: #c4c4c4;
     text-transform: uppercase;
