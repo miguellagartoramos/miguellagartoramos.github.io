@@ -138,6 +138,7 @@ ul, ol{
     opacity: 1;
     visibility: visible;
     height: 100%;
+    z-index: 999;
 }
 
 .overlay nav {
@@ -367,7 +368,6 @@ body #stars3:after {
     color: #FFF;
     top: 210px;
     font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
     font-weight: 900;
     font-size: 25px;
     text-shadow: 0 10px 5px rgba(0, 0, 0, 0.6);
@@ -812,6 +812,9 @@ body .wrapper #first-section p strong {
 .clr-28{background-color: #f1f1f1;}
 .clr-29{background-color: #df2226;}
 .clr-30{background-color: #363636;}
+.clr-31{background-color: #e9242e;}
+.clr-32{background-color: #9999a0;}
+.clr-33{background-color: #1d1c21;}
 
 .clr-box{
     height: 120px;
@@ -1030,7 +1033,7 @@ a.home-link:before{
     font-size: 12px;
     letter-spacing: 3px;
     padding: 4px 15px;
-    z-index: 9999;
+    z-index: 99;
     transform: rotateZ(90deg);
 }
 .box {
@@ -1051,53 +1054,11 @@ a.home-link:before{
     top: 3px;
 }
 
-.image-grid {
-    line-height: 0;
-    -webkit-column-count: 5;
-    -webkit-column-gap:   0px;
-    -moz-column-count:    5;
-    -moz-column-gap:      0px;
-    column-count:         5;
-    column-gap:           0px;
-}
-
-.image-grid img {
-    width: 100% !important;
-    height: auto !important;
-    padding: 10px;
-}
-
-@media (max-width: 1200px) {
-    .image-grid {
-        -moz-column-count:    4;
-        -webkit-column-count: 4;
-        column-count:         4;
-    }
-}
-@media (max-width: 1000px) {
-    .image-grid {
-        -moz-column-count:    3;
-        -webkit-column-count: 3;
-        column-count:         3;
-    }
-}
-@media (max-width: 800px) {
-    .image-grid {
-        -moz-column-count:    2;
-        -webkit-column-count: 2;
-        column-count:         2;
-    }
-}
-@media (max-width: 400px) {
-    .image-grid {
-        -moz-column-count:    1;
-        -webkit-column-count: 1;
-        column-count:         1;
-    }
-}
-
 .flex-images {
     margin-top: 65px;
+}
+.flex-images img{
+    border-radius: 5px;
 }
 
 /* Scrollbar Body */
@@ -1129,4 +1090,26 @@ div::-webkit-scrollbar-thumb {
 }
 div::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(160,160,160,.2); 
+}
+
+#third-section a{
+    z-index: 9999
+}
+#third-section .card-columns{
+    webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+#third-section .card {
+    border: none;
+}
+#third-section .card-body{
+    padding: 0;
+}
+
+#third-section .list-inline{
+    text-align: center;
+}
+#third-section img{
+    border-radius: 5px;
 }
