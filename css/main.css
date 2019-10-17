@@ -160,6 +160,10 @@ ul, ol{
     letter-spacing: 3px;
     font-family: inherit;
 }
+.overlay-menu h4 a{
+    text-decoration: none;
+    color: #FFF;
+}
 .overlay-menu ul.nav-link{
     position: relative;
     left: 4%;
